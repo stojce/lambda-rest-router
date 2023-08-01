@@ -1,1 +1,1 @@
-# lamdba-rest-router
+# AWS Lambda REST Router
