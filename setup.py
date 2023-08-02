@@ -1,6 +1,6 @@
+""" Setup.py """
 import codecs
 import os
-import re
 
 from setuptools import find_packages, setup
 
@@ -10,8 +10,9 @@ INSTALL_REQUIRES = []
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 def read(*parts):
-    with codecs.open(os.path.join(HERE, *parts), "rb", "utf-8") as f:
-        return f.read()
+    """ Read the contents of a text file """
+    with codecs.open(os.path.join(HERE, *parts), "rb", "utf-8") as file:
+        return file.read()
 
 
 setup(
